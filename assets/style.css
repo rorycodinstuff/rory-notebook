@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+
 :root {
-    --accent: #2D9CDB;
+    --accent: #0B64FE;
     --grey: #444;
 }
 
 html {
-    font-size:  100%;
+    font-size: 20px;
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Inter, sans-serif;
+    background-color: #F2F2F2;
+    color: #000; 
+    font-family: 'Manrope', serif;
     line-height: 1.65;
+    font-weight: 400;
     
     display: flex;
     flex-direction: column;
@@ -19,28 +25,24 @@ body {
     margin: 0 24px;
 }
 
-@media only screen and (max-width: 468px) {
-    .page-header {
-        flex-direction: column;
-    }
+
+
+nav {
+    display: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    text-align: left;
 }
 
-.page-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 8px;
-}
-
-.page-header nav a:not(:hover):not(:focus) {
+nav a:not(:hover):not(:focus) {
     color: currentColor;
     text-decoration: none;
 }
 
 nav a {
-    margin: 0 12px;
-    font-size: 1.25em;
+    margin: -8px 5px;
+    font-size: 1.1em;
 }
 
 main {
@@ -77,7 +79,7 @@ p {margin-bottom: 1.15rem;}
 
 h1, h2, h3, h4, h5 {
   margin: 2.75rem 0 1.05rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.15;
 }
 
